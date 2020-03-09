@@ -8,8 +8,7 @@
     "start": "electron ."
   },
   "repository": "https://github.com/rpi-alpaca/gui",
-  "keywords": [
-  ],
+  "keywords": [],
   "author": "GitHub",
   "license": "MIT",
   "devDependencies": {
