@@ -2,16 +2,23 @@
   "name": "alpaca-gui",
   "version": "1.0.0",
   "description": "A minimal Electron application",
-  "main": "main.js",
+  "main": "dist/main.bundle.js",
   "scripts": {
-    "build:logic": "docker run --rm -v $(pwd):/src trzeci/emscripten ./build.sh",
-    "start": "electron ."
+    "start": "npm run build && npm run electron",
+    "build": "webpack --config webpack.config.js",
+    "electron": "electron ."
   },
   "repository": "https://github.com/rpi-alpaca/gui",
   "keywords": [],
-  "author": "GitHub",
+  "author": "RPI-ALPACA",
   "license": "MIT",
   "devDependencies": {
-    "electron": "^8.0.1"
+    "electron": "^8.2.0",
+    "typescript": "^3.8.3",
+    "webpack": "^4.42.1",
+    "@types/node": "^13.9.8",
+    "html-webpack-plugin": "^4.0.3",
+    "ts-loader": "^6.2.2",
+    "webpack-cli": "^3.3.11"
   }
 }
