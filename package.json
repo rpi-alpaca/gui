@@ -20,5 +20,8 @@
     "html-webpack-plugin": "^4.0.3",
     "ts-loader": "^6.2.2",
     "webpack-cli": "^3.3.11"
+  },
+  "dependencies": {
+    "blockly": "^3.20200402.0"
   }
 }
