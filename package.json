@@ -13,6 +13,7 @@
   "author": "RPI-ALPACA",
   "license": "MIT",
   "devDependencies": {
+    "copy-webpack-plugin": "^5.1.1",
     "electron": "^8.2.0",
     "typescript": "^3.8.3",
     "webpack": "^4.42.1",

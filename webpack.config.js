@@ -1,5 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CopyPlugin = require('copy-webpack-plugin');
 
 const mainProcessConfig = {
   entry: {
@@ -82,6 +83,10 @@ const rendererProcessConfig = {
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, './src/renderer/index.html'),
     }),
+    new CopyPlugin([{
+      from: path.resolve(__dirname, './node_modules/blockly/media'),
+      to: path.resolve(__dirname, './dist/media')
+    }]),
   ],
   output: {
     filename: '[name].bundle.js',

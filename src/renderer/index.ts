@@ -8,5 +8,6 @@ import Blockly from 'blockly';
 
 window.addEventListener('DOMContentLoaded', () => {
   Blockly.inject('blocklyDiv', {
+  	media: 'media/'
   });
 });
